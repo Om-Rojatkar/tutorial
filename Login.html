@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tour Login Form</title>
+       
+        <style>
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body {
+ 
+ background-position:center;
+ background-color:black;
+ 
+}
+.wrapper{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.form{
+    position:relative;
+    width:100%;
+    max-width:330px;
+    padding:80px 40px 40px;
+    background:rgb(10, 10, 8);
+    border-radius:5px;
+    color:rgb(251, 242, 242);
+    box-shadow:0 15px 25px rgba(12, 104, 91, 0.8);
+
+}
+#forgot-pw{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    top:0;
+    left:0;
+    right:0;
+    height:0;
+    z-index:1;
+    background:rgb(245, 243, 243);
+    opacity:0;
+    transition:0.3s;
+    
+}
+#forgot-pw:target{
+    height:100%;
+    opacity:1;
+}
+.form::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:50%;
+    Background:rgba(47, 88, 179, 0.08);
+    border-radius:5px;
+    pointer-events:none;
+    transform:skewX(-26px);
+    transform-origin:bottom left;
+}
+
+.form img{
+    position:absolute;
+    top:-50px;
+    left:calc(50% - 50px);
+    border-radius:50%;
+
+    
+}
+.form h2{
+    text-align:center;
+    letter-spacing:1px;
+    margin-bottom:1rem;
+    color:#ff652f;
+    
+}
+.form .input-group{
+    position:relative;
+}
+.form .input-group input{
+    Width:100%;
+    padding:10px 0;
+    font-size:1rem;
+    border:none;
+    outline:none;
+    letter-spacing:1px;
+    border-bottom:1px solid #fff;
+    margin-bottom:30px;
+    background-color:transparent;
+    color:inherit;
+}
+form .input-group label{
+    position:absolute;
+    top:0;
+    left:0;
+    padding-bottom:10px 0;
+    font-size:1rem;
+    pointer-events:none;
+    transition:.5s ease-out;
+    
+}
+.form .input-group input:focus + label,
+.form .input-group input:valid + label{
+    transform:translateY(-18px);
+    color:#ff652f;
+    font-size:0.8rem;
+}
+.button{
+    display:block ;
+    margin-left:auto ;
+    padding-top:100px;
+    border:none;
+    outline:none;
+    background:#ff652f;
+    font-size:1rem;
+    text-transform:uppercase ;
+    letter-spacing:1px;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer ;
+    color:#eee;
+}
+.button1:hover{
+    background:none;
+    border:1px #ff652f solid ;
+}
+
+.btn{
+    display:block ;
+    margin-left:auto ;
+    padding-top:100px;
+    border:none;
+    outline:none;
+    background:#13d1a8;
+    font-size:1rem;
+    text-transform:uppercase ;
+    letter-spacing:1px;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer ;
+    color:#eee;
+}
+
+.button2:hover{
+    background:none;
+    border:1px #621007 solid ;
+}
+
+
+.forgot-pw{
+    color:inherit ;
+}
+
+    
+
+
+
+        </style>
+   
+   
+   
+    </head>
+    <body>
+        <div class="wrapper">
+          <form action="" class="form">
+            <div class="img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB9_LHuzPumQvk_44LpP664h4_MoakRD6nFQ&usqp=CAU" width="90px">
+        </div>
+                <h2>login</h2>
+            <div class="input-group">
+                <input type="loginUser" name="loginUser" id="loginUser" required>
+                 <label for="loginPassword">UserName</label> 
+                 </div>
+                 <div class="input-group">
+                  <input type="password" name="password" id="password" required>
+     <label for="loginPassword">password</label> 
+            </div>
+
+     <button   type="button" class="button button1"><a href="file:///D:/TOUR%20WEBSITE/PROJECT/TBooking.html"> Login</a></button>
+
+                <a href="#forgot-pw" class="forgot-pw">forgot password</a>
+
+                <button   type="button" class="btn button2"><a href="D:\TOUR WEBSITE\PROJECT\tour DEMO.html"> Cancel</a></button>
+
+         </form>
+      </div>
+         
+        
+    </body>
+</html>
